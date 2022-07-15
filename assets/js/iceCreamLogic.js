@@ -20,7 +20,7 @@ function createfn() {
             data.forEach(row => {
                 var button = document.createElement("a");
                 button.className = "btn btn-primary";
-                button.href = "displayImage.html?image=" + row[1] + "&source=iceCream.html";
+                button.href = "displayImage.html?image=" + row[1] + "&source=IceCream.html";
                 button.innerHTML = row[0];
                 container.appendChild(button);
             });
