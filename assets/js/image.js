@@ -2,6 +2,10 @@ function createfn() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const imageURL = urlParams.get('image');
+    const source = urlParams.get('source');
+
+    //set up our back button
+    document.getElementById('navigation').innerHTML = "<a href='" + source + "' class='btn btn-primary'>← Back</a>";
 
     // clear the body of the page in case we were called from search()
     document.getElementById('main-container').innerHTML = "";
