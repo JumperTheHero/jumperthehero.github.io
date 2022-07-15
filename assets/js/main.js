@@ -20,7 +20,7 @@ function createfn() {
             data.forEach(row => {
                 var button = document.createElement("a");
                 button.className = "btn btn-primary";
-                button.href = "assets/img/" + row[1];
+                button.href = "displayImage.html?image=" + row[1];
                 button.innerHTML = row[0];
                 container.appendChild(button);
             });
@@ -81,7 +81,7 @@ function search() {
             recipes.forEach(row => {
                 var button = document.createElement("a");
                 button.className = "btn btn-primary";
-                button.href = "assets/img/" + row[1];
+                button.href = "displayImage.html?image=" + row[1];
                 button.innerHTML = row[0];
                 container.appendChild(button);
             });
