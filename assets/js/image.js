@@ -12,11 +12,12 @@ function createfn() {
 
     // create container element
     var container = document.createElement("div");
-    container.className = "container-fluid";
+    container.className = "container-fluid text-center";
 
     var image = document.createElement("img");
     image.src = "assets/img/" + imageURL;
-    image.style = "height: 500px;";
+    image.style = "max-height: 400px;";
+    image.className = "img-fluid";
     container.appendChild(image);
 
     // place our new container of buttons into the page
