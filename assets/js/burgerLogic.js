@@ -31,7 +31,7 @@ function createfn() {
 }
 
 function search() {
-    // clear out the container of buttons
+    // clear out the container of buttons -- very cool
     document.getElementById('main-container').innerHTML = "Searching...";
 
     // create container element
