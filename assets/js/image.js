@@ -5,7 +5,7 @@ function createfn() {
   source = urlParams.get('source');
 
   //set up our back button
-  document.getElementById('navigation').innerHTML = "<div class='container-fluid'><div class='row'><div class='col'><a href='recipes.html?mode=" + source + "' class='btn btn-primary'>← Back</a></div><div class='col'><form onsubmit='onenter(); return false;' class='d-flex' role='search'><input id='input' class='form-control me-2' type='search' placeholder='Search' aria-label='Search'><button class='btn btn-outline-success' type='submit'>Search</button></form></div></div>";
+  document.getElementById('navigation').innerHTML = "<div class='container-fluid'><form onsubmit='onenter(); return false;' class='d-flex flex-row mb-3' role='search'><a href='recipes.html?mode=" + source + "' class='btn btn-primary'>←</a><input id='input' class='form-control me-2 p-2' type='search' placeholder='Search' aria-label='Search'><button class='btn btn-outline-success p-2' type='submit'>Search</button></form>";
 
   // clear the body of the page in case we were called from search()
   document.getElementById('main-container').innerHTML = "";
