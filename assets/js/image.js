@@ -25,14 +25,8 @@ function createfn() {
 }
 
 function onenter() {
-  console.log("on enter");
-  var getUrl = window.location;
-  console.log(getUrl);
-  var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-  console.log(baseUrl);
-  var searchValue = document.getElementById("input").value;
-  //window.location.assign("https://www.w3schools.com");
-  location.replace(window.location.pathname.slice(0, -18) + "/recipes.html?mode=" + source + "&search=" + searchValue);
+    var searchValue = document.getElementById("input").value;
+    location.href = "recipes.html?mode=" + source + "&search=" + searchValue;
 }
 
 // when the window loads, execute the creation of the buttons

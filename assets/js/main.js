@@ -74,7 +74,7 @@ function search() {
             var searchValue = document.getElementById("input").value;
 
             if (searchValue == "") {
-                location.replace(window.location.pathname.slice(0, -13) + "/recipes.html?mode=" + mode);
+                location.href = "recipes.html?mode=" + mode;
                 createfn();
                 return;
             }
